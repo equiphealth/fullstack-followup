@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# PriceMe Full Stack Follow Up
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Now that you've put together the meat of how PriceMe works, lets extend your challenge with a couple key pieces of the stack:
 
-## Available Scripts
+1. a front end / UI
+2. a consumable and extensible API
 
-In the project directory, you can run:
+<i>**Note:** We provided a `start:server` script for you as a template using `babel-node`, which is configured to be able to execute `.ts` script files. However, feel free to change it if you have something else in mind.</i>
 
-### `npm start`
+## Front End
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This repo was bootstrapped using CRA (create-react-app), so everything is set up for you as far as the front end web server goes, so all you need to do is run `npm start` and a web server on port 3000 of `localhost` will be available for you to connect to in the browser. CRA has HMR (hot module reloading) already baked in, so any changes you make in `App.tsx` (and any subsequent modules you decide to create) will automatically get picked up as long as the web server is running.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Design
 
-### `npm test`
+We want you to take the provided wireframe and stand up a single page application that mirrors the design **structurally**, but feel free to take creative liberty with the aesthetics and the "look and feel" of the page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![PriceMeDesign.png](./PriceMeDesign.png)
 
-### `npm run build`
+### API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We want you to stand up a simple API server (don't worry about CORS or HTTPS/SSL) with various endpoints that a client can hit and consume the response. In our case, your API should be able to serve the necessary data given the request from the front end / UI, which should be very similar to the request that you provided in your initial challenge via the CLI.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Addendum
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A few pieces of advice:
 
-### `npm run eject`
+1. We are not expecting you to complete this challenge end-to-end in 1 hour, although if you can that is definitely a plus.
+2. We are not expecting you to be a design/UI/UX guru, so don't worry about the aesthetics of the application, just make sure you follow the general structure given.
+3. Don't worry about using Typescript if you are not familiar with it, we just use Typescript in our stack so we set it up this way, but feel free to omit any Typescript syntaxes as should still work regardless (we'll help you debug through issues if you come up with any Typescript related ones should you opt out of using Typescript).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+And just in general, have fun with this challenge and feel free to ask as many questions as you need. We won't dock you any "points" for asking "too many questions".
